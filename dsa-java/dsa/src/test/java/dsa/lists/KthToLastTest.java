@@ -44,4 +44,11 @@ public class KthToLastTest {
     LinkedListNode actual = KthToLast.kthToLast(head, 2);
     assertEquals(expected.data, actual.data);
   }
+
+  @Test
+  public void testNthToLast() {
+    LinkedListNode expected = nodes.get(8);
+    LinkedListNode actual = KthToLast.nthToLast(head, 2);
+    assertEquals(expected.data, actual.data);
+  }
 }
