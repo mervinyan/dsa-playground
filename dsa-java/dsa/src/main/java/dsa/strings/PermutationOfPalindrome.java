@@ -1,7 +1,5 @@
 package dsa.strings;
 
-import java.util.concurrent.CountDownLatch;
-
 public class PermutationOfPalindrome {
   static boolean isPermutationOfPalindrome_V1(String phrase) {
     int[] table = buildCharFrequency(phrase);

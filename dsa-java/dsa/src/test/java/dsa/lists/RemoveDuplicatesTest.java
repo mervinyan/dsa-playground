@@ -16,10 +16,13 @@ public class RemoveDuplicatesTest {
   @Before
   public void setUp() {
     List<LinkedListNode> nodes = new ArrayList<>();
+
+    //10, 20, 30, 0, 10, 20, 30, 0, 10 
     for (int i = 1; i < 10; i++) {
       nodes.add(new LinkedListNode((i % 4) * 10));
     }
-    //10, 20, 30, 0, 10, 20, 30, 0, 10 
+
+    // 0 -> 10 -> 30 -> 20 -> 20 -> 10 -> 30 -> 10 -> 0
 
     head = nodes.get(3);
     head.setNext(nodes.get(0));
@@ -30,8 +33,6 @@ public class RemoveDuplicatesTest {
     nodes.get(4).setNext(nodes.get(2));
     nodes.get(2).setNext(nodes.get(8));
     nodes.get(8).setNext(nodes.get(7));
-
-    // 0 -> 10 -> 30 -> 20 -> 20 -> 10 -> 20 -> 10 -> 0
 
     //expected 0 -> 10 -> 30 -> 20
     expected = new LinkedListNode(0);
