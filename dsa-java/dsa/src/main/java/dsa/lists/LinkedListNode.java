@@ -43,4 +43,21 @@ public class LinkedListNode {
     LinkedListNode head2 = new LinkedListNode(data, next2, null);
     return head2;
   }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+
+    sb.append(data);
+
+    LinkedListNode nextNode = next;
+    while (nextNode != null) {
+      sb.append(" -> ");
+      sb.append(nextNode.data);
+
+      nextNode = nextNode.next;
+    }
+
+    return sb.toString();
+  }
 }
