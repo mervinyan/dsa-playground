@@ -50,12 +50,12 @@ public class LinkedListNode {
 
     sb.append(data);
 
-    LinkedListNode nextNode = next;
-    while (nextNode != null) {
+    LinkedListNode node = next;
+    while (node != null) {
       sb.append(" -> ");
-      sb.append(nextNode.data);
+      sb.append(node.data);
 
-      nextNode = nextNode.next;
+      node = node.next;
     }
 
     return sb.toString();
