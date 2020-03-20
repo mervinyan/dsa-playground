@@ -2,8 +2,6 @@ package dsa.queues;
 
 import java.util.LinkedList;
 
-import dsa.lists.LinkedListNode;
-
 public class AnimalQueue {
   LinkedList<Dog> dogs = new LinkedList<>();
   LinkedList<Cat> cats = new LinkedList<>();

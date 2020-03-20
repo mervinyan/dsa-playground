@@ -3,6 +3,7 @@ package dsa.stacks;
 import java.util.Stack;
 
 public class StackWithMin2 extends Stack<Integer> {
+  private static final long serialVersionUID = -932349860872074917L;
   Stack<Integer> s2;
 
   public StackWithMin2() {
