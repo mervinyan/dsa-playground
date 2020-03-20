@@ -17,8 +17,8 @@ public class SortStackTest {
 
     SortStack.sort(s);
 
-    assertEquals(new Integer(5), s.pop());
-    assertEquals(new Integer(7), s.pop());
-    assertEquals(new Integer(10), s.pop());
+    assertEquals(Integer.valueOf(5), s.pop());
+    assertEquals(Integer.valueOf(7), s.pop());
+    assertEquals(Integer.valueOf(10), s.pop());
   }
 }

@@ -12,8 +12,8 @@ public class MyQueueTest {
     queue.add(20);
     queue.add(30);
     assertEquals(3, queue.size());
-    assertEquals(new Integer(10), queue.peek());
-    assertEquals(new Integer(10), queue.remove());
-    assertEquals(new Integer(20), queue.peek());
+    assertEquals(Integer.valueOf(10), queue.peek());
+    assertEquals(Integer.valueOf(10), queue.remove());
+    assertEquals(Integer.valueOf(20), queue.peek());
   }
 }
